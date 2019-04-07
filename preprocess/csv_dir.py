@@ -11,13 +11,13 @@ import shutil
 
 csv_file = "train.csv"
 
-def listdir(path, list_name):  #传入存储的list
+def listdir(path, list_name): 
 	for file in os.listdir(path):  
 		file_path = os.path.join(path, file)  
 		if os.path.isdir(file_path):  
 			listdir(file_path, list_name)  
 		else:  
-			list_name.append(file_path[5:])    #将前面的路径去掉，只保留文件名
+			list_name.append(file_path[5:]) 
 	#print(list_name)
 
 
@@ -28,10 +28,10 @@ with open(csv_file) as file:
 	reader = csv.reader(file)
 	#print(list(reader))
 	for row in reader:
-		#print(reader.line_num, row)   #用于获取所有内容
-		#print(row)   #输出CSV中每一行的内容
-		#print(row[0])	#输出文件名
-		#print(row[1])	#输出文件标签
+		#print(reader.line_num, row)
+		#print(row) 
+		#print(row[0])
+		#print(row[1])
 		if row[0] in filename:
 			#print(row[0])    #y验证
 			if row[1] == '1':
