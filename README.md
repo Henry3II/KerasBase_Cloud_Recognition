@@ -1,2 +1,2 @@
 # KerasBase_Cloud_Recognition
-Recognize Clouds for five classes with keras base neural network. DataFountain 2018.
+Recognize Clouds for five classes with keras base neural network. 
